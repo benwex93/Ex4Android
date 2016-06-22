@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/tools">
+    <item name="Hebrew" type="id" android:showAsAction="ifRoom"/>
+    <item name="English" type="id" android:showAsAction="ifRoom"/>
+    <item name="Logout" type="id" android:showAsAction="ifRoom"/>
+    <item name="Exit" type="id" android:showAsAction="ifRoom"/>
+</resources>

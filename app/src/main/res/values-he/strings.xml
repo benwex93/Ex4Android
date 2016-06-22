@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">תרגיל4</string>
+    <string name="my_preferences">ההעדפות שלי</string>
+    <string name="welcome0">זה גדול יותר </string>
+    <string name="welcome1">זה רע יותר </string>
+    <string name="welcome2">זה יותר מדי</string>
+    <string name="welcome3">עבור מיסטר מדהים</string>
+    <string name="skip">דלג</string>
+    <string name="cont">המשִך</string>
+    <string name="error_username_required">שם משתמש לא הוזן</string>
+    <string name="error_password_required">לא הוזנה סיסמה</string>
+    <string name="error_name_required">שם לא הוזן</string>
+    <string name="error_email_required">אימייל לא הוזן</string>
+    <string name="error_icon_required">סמל לא נבחר</string>
+    <string name="choose_icon">אנא לחץ על אחד מהסמלים הבאים :</string>
+    <string name="name">שֵׁם</string>
+    <string name="password">סיסמה</string>
+    <string name="email">אימייל</string>
+    <string name="user_name">שם משתמש</string>
+    <string name="login">התחבר</string>
+    <string name="sign_up">הירשם</string>
+    <string name="register">הירשם</string>
+    <string name="hebrew">לעבור לעברית</string>
+    <string name="english">Switch to English</string>
+    <string name="logout">להתנתק</string>
+    <string name="exit">יְצִיאָה</string>
+    <string name="send">לִשְׁלוֹחַ</string>
+    <string name="write">הקלד פה...</string>
+</resources>

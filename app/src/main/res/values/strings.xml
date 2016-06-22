@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Ex4</string>
+    <string name="my_preferences">MyPrefs</string>
+    <string name="welcome0">It\'s bigger...</string>
+    <string name="welcome1">It\'s badder...</string>
+    <string name="welcome2">It\'s too much</string>
+    <string name="welcome3">...for Mr. Incredible!</string>
+    <string name="skip">skip</string>
+    <string name="cont">continue</string>
+    <string name="error_username_required">No Username Entered!</string>
+    <string name="error_password_required">No Password Entered!</string>
+    <string name="error_name_required">No Name Entered!</string>
+    <string name="error_email_required">No Email Entered!</string>
+    <string name="error_icon_required">No Icon Selected!</string>
+    <string name="choose_icon">Please click one of the following icons:</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="user_name">Username</string>
+    <string name="login">Login!</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="register">Register!</string>
+    <string name="hebrew">לעבור לעברית</string>
+    <string name="english">Switch to English</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    <string name="send">Send</string>
+    <string name="write">Type here...</string>
+</resources>
