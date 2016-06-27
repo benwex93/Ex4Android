@@ -1,40 +1,32 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4._____FifthActivity;
 
 import android.app.ListActivity;
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AbsListView;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import java.util.ArrayList;
+import com.example.benjamin.ex4.R;
+import com.example.benjamin.ex4._FirstActivity.FirstActivitySplash;
+import com.example.benjamin.ex4.___ThirdActivity.ThirdActivityLogin;
+import com.example.benjamin.ex4.__SecondActivity.SecondActivityFragments;
+
 import java.util.Calendar;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
-import java.util.TreeMap;
 
 /**
  * Created by benjamin on 17/06/16.
@@ -54,6 +46,7 @@ public class FifthActivityMessaging extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fifth_activity_messaging);
+       // checkLanguageAlignment();
         welcomeUser();
         updateMessages();
         initializeShaker();
@@ -115,7 +108,7 @@ public class FifthActivityMessaging extends ListActivity {
         SharedPreferences sharedpreferences = getSharedPreferences(getString(R.string.my_preferences), Context.MODE_PRIVATE);
         String user = sharedpreferences.getString("username","");
         if(!user.equals("")) {
-            Toast.makeText(this, "Welcome " + user + "!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getResources().getString(R.string.welcome) + user + "!", Toast.LENGTH_SHORT).show();
         }
         else
         {
@@ -135,7 +128,9 @@ public class FifthActivityMessaging extends ListActivity {
         messages_to_view += 10;
         //gets the amount in messages_to_view of messages
 
-        String[] values = new String[] { "(" + message.time + ") " + message.username + ":" + message.message_content};
+        String[] values = new String[] { "(" + message.time + ") " + message.username + ":" + message.message_content,
+                "(" + message.time + ") " + message.username + ":" + "Where IS my suuper-SUIT?",
+                "(" + message.time + ") " + "Bernie" + ":" + "COincidence? I THINK NOT!"};
         adapter = new MessagingListAdapter(this, values);
         setListAdapter(adapter);
     }
@@ -151,7 +146,7 @@ public class FifthActivityMessaging extends ListActivity {
             Intent i = new Intent(this, ThirdActivityLogin.class);
             startActivity(i);
         }
-        message = new Message(time,username,messageContent,"Cal.png");
+        message = new Message(time,username,messageContent,"bernie_head.png");
         updateMessages();
         ((EditText) findViewById(R.id.message_text)).setText("");
 
@@ -169,7 +164,7 @@ public class FifthActivityMessaging extends ListActivity {
     @Override
     public void onBackPressed()
     {
-        Intent i = new Intent(FifthActivityMessaging.this, SecondActivityFragments.class);
+        Intent i = new Intent(FifthActivityMessaging.this, FirstActivitySplash.class);
         startActivity(i);
     }
     @Override

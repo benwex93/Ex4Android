@@ -5,6 +5,11 @@
     <string name="welcome1">It\'s badder...</string>
     <string name="welcome2">It\'s too much</string>
     <string name="welcome3">...for Mr. Incredible!</string>
+    <string name="instruction0">Welcome!\n This app functions as a chatroom for sharing your favorite Incredibles quotes</string>
+    <string name="instruction1">At any time, to change the language, logout, or exit, use the options button on your android device</string>
+    <string name="instruction2">After you sign in (or if you have no account- sign up) you will remain signed in until you logout</string>
+    <string name="instruction3">Swipe down to load 10 earlier messages, shake or wait 5 minutes to update messages</string>
+    <string name="instruction4">Press the bottom right button to cancel automatic updates, press again to turn them on again \n ENJOY!</string>
     <string name="skip">skip</string>
     <string name="cont">continue</string>
     <string name="error_username_required">No Username Entered!</string>
@@ -23,7 +28,13 @@
     <string name="hebrew">לעבור לעברית</string>
     <string name="english">Switch to English</string>
     <string name="logout">Logout</string>
+    <string name="instructions">Instructions</string>
     <string name="exit">Exit</string>
     <string name="send">Send</string>
     <string name="write">Type here...</string>
+    <string name="new_message">You have new messages!</string>
+    <string name="notification">Notification</string>
+    <string name="click">Click to see your new messages</string>
+    <string name="welcome">Welcome</string>
+    <string name="bad_user">No such user found!</string>
 </resources>

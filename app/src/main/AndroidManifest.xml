@@ -4,22 +4,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/incredibles"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstActivitySplash" android:theme ="@style/AppTheme.NoActionBar">
+        <activity android:name="._FirstActivity.FirstActivitySplash" android:theme ="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivityFragments" android:configChanges="locale" android:theme="@style/Theme.AppCompat.Light"/>
-        <activity android:name=".ThirdActivityLogin" android:configChanges="locale" android:theme="@style/Theme.AppCompat.Light"/>
-        <activity android:name=".FourthActivitySignUp" android:configChanges="locale" android:theme="@style/Theme.AppCompat.Light"/>
-        <activity android:name=".FifthActivityMessaging" android:configChanges="locale" android:theme="@android:style/Theme.Holo"/>
-        <service android:name=".MessageService" android:enabled="true" android:exported="true"/>
-        <receiver android:name=".MessagesUpdateReceiver" />
+        <activity android:name=".__SecondActivity.SecondActivityFragments" android:configChanges="locale"/>
+        <activity android:name=".___ThirdActivity.ThirdActivityLogin" android:configChanges="locale"/>
+        <activity android:name=".____FourthActivity.FourthActivitySignUp" android:configChanges="locale"/>
+        <activity android:name="._____FifthActivity.FifthActivityMessaging" android:configChanges="locale" android:theme="@android:style/Theme.Holo"/>
+        <service android:name="._____FifthActivity.MessageService" android:enabled="true" android:exported="true"/>
+        <receiver android:name="._____FifthActivity.MessagesUpdateReceiver" />
     </application>
     <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
 </manifest>

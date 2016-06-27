@@ -1,11 +1,9 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4._____FifthActivity;
 
 /**
  * Created by benjamin on 21/06/16.
  */
 import android.app.AlarmManager;
-import android.app.Notification;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
@@ -14,7 +12,6 @@ import android.os.IBinder;
 import android.widget.Toast;
 
 import java.util.GregorianCalendar;
-import java.util.Random;
 
 public class MessageService extends Service {
     public static Context context;

@@ -1,4 +1,4 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4._____FifthActivity;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.benjamin.ex4.R;
 
 /**
  * Created by benjamin on 21/06/16.
@@ -33,9 +35,9 @@ public class MessagingListAdapter extends ArrayAdapter<String> {
         String s = values[position];
         if (s.startsWith("Windows7") || s.startsWith("iPhone")
                 || s.startsWith("Solaris")) {
-            imageView.setImageResource(R.drawable.ducky);
+            imageView.setImageResource(R.drawable.bernie_head);
         } else {
-            imageView.setImageResource(R.drawable.israel);
+            imageView.setImageResource(R.drawable.frozone_head);
         }
 
         return rowView;

@@ -1,4 +1,4 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4._____FifthActivity;
 
 import android.app.AlarmManager;
 import android.app.Notification;
@@ -7,7 +7,8 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.widget.Toast;
+
+import com.example.benjamin.ex4.R;
 
 import java.util.GregorianCalendar;
 
@@ -37,8 +38,9 @@ public class MessagesUpdateReceiver extends BroadcastReceiver
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 1, notificationIntent, 0);
 
         Notification.Builder builder = new Notification.Builder(context);
-        builder.setAutoCancel(true).setTicker("You have new messages!").setContentTitle("Notification")
-                .setContentText("Click to see your new messages").setSmallIcon(R.drawable.cal)
+        builder.setAutoCancel(true).setTicker(context.getString(R.string.new_message))
+                .setContentTitle(context.getString(R.string.notification))
+                .setContentText(context.getString(R.string.click)).setSmallIcon(R.drawable.incredibles)
                 .setContentIntent(pendingIntent).setOngoing(true);
 
         notification = builder.getNotification();

@@ -1,4 +1,4 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4._FirstActivity;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -8,6 +8,9 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+
+import com.example.benjamin.ex4.__SecondActivity.AnnouncementFragment;
+import com.example.benjamin.ex4.R;
 
 /**
  * Created by benjamin on 20/06/16.

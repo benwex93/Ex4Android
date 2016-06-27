@@ -1,4 +1,4 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4._____FifthActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +7,10 @@ import android.content.res.Configuration;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.example.benjamin.ex4.R;
+import com.example.benjamin.ex4.__SecondActivity.SecondActivityFragments;
+import com.example.benjamin.ex4.___ThirdActivity.ThirdActivityLogin;
 
 import java.util.Locale;
 
@@ -19,6 +23,7 @@ public class PullUpMenuObserver {
         menu.add(Menu.NONE, R.id.Hebrew, Menu.NONE, R.string.hebrew);
         menu.add(Menu.NONE, R.id.English, Menu.NONE, R.string.english);
         menu.add(Menu.NONE, R.id.Logout, Menu.NONE, R.string.logout);
+        menu.add(Menu.NONE, R.id.Instructions, Menu.NONE, R.string.instructions);
         menu.add(Menu.NONE, R.id.Exit, Menu.NONE, R.string.exit);
     }
     public boolean performMenuAction(Context context, MenuItem item, Context baseContext)
@@ -49,6 +54,14 @@ public class PullUpMenuObserver {
                 editor.commit();
                 Intent intent3 = new Intent(context, ThirdActivityLogin.class);
                 context.startActivity(intent3);
+                return true;
+            case R.id.Instructions:
+                SharedPreferences sharedpreferences2 = context.getSharedPreferences(context.getString(R.string.my_preferences), Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor2 = sharedpreferences2.edit();
+                editor2.putString("firstTime","");
+                editor2.commit();
+                Intent intent4 = new Intent(context, SecondActivityFragments.class);
+                context.startActivity(intent4);
                 return true;
             case R.id.Exit:
                 Intent intent = new Intent(Intent.ACTION_MAIN);

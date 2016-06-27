@@ -1,4 +1,4 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4.__SecondActivity;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -8,6 +8,8 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.widget.RadioButton;
+
+import com.example.benjamin.ex4.__SecondActivity.AnnouncementFragment;
 
 import java.util.ArrayList;
 import java.util.List;

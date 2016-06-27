@@ -1,14 +1,14 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4._FirstActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerAdapter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.benjamin.ex4.R;
+import com.example.benjamin.ex4.__SecondActivity.SecondActivityFragments;
 public class FirstActivitySplash extends AppCompatActivity {
     // Splash screen timer
     private static int SPLASH_TIME_OUT = 1000;
@@ -22,7 +22,6 @@ public class FirstActivitySplash extends AppCompatActivity {
      * handler to handle messages every 3 seconds
      */
     final Handler handler = new Handler();
-    private boolean exitCalled = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

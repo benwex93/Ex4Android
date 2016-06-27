@@ -6,6 +6,11 @@
     <string name="welcome1">זה רע יותר </string>
     <string name="welcome2">זה יותר מדי</string>
     <string name="welcome3">עבור מיסטר מדהים</string>
+    <string name="instruction0">ברוך הבא! \n פונקצית האפליקציה היא צט להעביר הציטוטים האהובים שלך מסרט משפחת סופר-על</string>
+    <string name="instruction1">בכל עת , לשנות את השפה , להתנתק , או כדי לצאת , להשתמש בלחצן אפשרויות במכשיר אנדרואיד שלך</string>
+    <string name="instruction2">לאחר שתיכנס (או אם אין לך חשבון - להירשם) תחובר עד שתתנתק</string>
+    <string name="instruction3">חלק למטה כדי לטעון 10 הודעות קודמות ,ולנער או לחכות 5 דקות לעדכן הודעות</string>
+    <string name="instruction4">לחץ על הלחצן השמאלי התחתון כדי לבטל עדכונים אוטומטיים ,לחץ שוב כדי להפעיל אותם שוב \n ENJOY !</string>
     <string name="skip">דלג</string>
     <string name="cont">המשִך</string>
     <string name="error_username_required">שם משתמש לא הוזן</string>
@@ -24,7 +29,13 @@
     <string name="hebrew">לעבור לעברית</string>
     <string name="english">Switch to English</string>
     <string name="logout">להתנתק</string>
+    <string name="instructions">הוראות</string>
     <string name="exit">יְצִיאָה</string>
     <string name="send">לִשְׁלוֹחַ</string>
     <string name="write">הקלד פה...</string>
+    <string name="new_message">יש לך הודעות חדשות !</string>
+    <string name="notification">הוֹדָעָה</string>
+    <string name="click">לחץ כדי לראות את ההודעות החדשות שלך</string>
+    <string name="welcome">ברוכים הבאים</string>
+    <string name="bad_user">לא נמצא משתמש כזה !</string>
 </resources>

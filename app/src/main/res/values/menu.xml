@@ -3,5 +3,6 @@
     <item name="Hebrew" type="id" android:showAsAction="ifRoom"/>
     <item name="English" type="id" android:showAsAction="ifRoom"/>
     <item name="Logout" type="id" android:showAsAction="ifRoom"/>
+    <item name="Instructions" type="id" android:showAsAction="ifRoom"/>
     <item name="Exit" type="id" android:showAsAction="ifRoom"/>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4.____FourthActivity;
 
 /**
  * Created by benjamin on 17/06/16.

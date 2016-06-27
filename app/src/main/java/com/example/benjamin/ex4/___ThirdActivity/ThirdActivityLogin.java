@@ -1,19 +1,23 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4.___ThirdActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.benjamin.ex4._FirstActivity.FirstActivitySplash;
+import com.example.benjamin.ex4._____FifthActivity.PullUpMenuObserver;
+import com.example.benjamin.ex4.R;
+import com.example.benjamin.ex4.__SecondActivity.SecondActivityFragments;
+import com.example.benjamin.ex4.____FourthActivity.FourthActivitySignUp;
+import com.example.benjamin.ex4._____FifthActivity.FifthActivityMessaging;
 
 public class ThirdActivityLogin extends AppCompatActivity {
     private static PullUpMenuObserver pullUpMenuObserver = new PullUpMenuObserver();
@@ -53,8 +57,8 @@ public class ThirdActivityLogin extends AppCompatActivity {
 
 
         //if invalid username
-        Toast.makeText(this, "Wrong Username", Toast.LENGTH_LONG).show();
-
+        Toast.makeText(this, getResources().getString(R.string.bad_user), Toast.LENGTH_LONG).show();
+        //return;
         Intent i = new Intent(ThirdActivityLogin.this, FifthActivityMessaging.class);
         startActivity(i);
     }
@@ -76,7 +80,7 @@ public class ThirdActivityLogin extends AppCompatActivity {
     @Override
     public void onBackPressed()
     {
-        Intent i = new Intent(ThirdActivityLogin.this, SecondActivityFragments.class);
+        Intent i = new Intent(ThirdActivityLogin.this, FirstActivitySplash.class);
         startActivity(i);
     }
 }

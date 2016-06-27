@@ -1,4 +1,4 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4.____FourthActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.example.benjamin.ex4._____FifthActivity.FifthActivityMessaging;
+import com.example.benjamin.ex4._____FifthActivity.PullUpMenuObserver;
+import com.example.benjamin.ex4.R;
+import com.example.benjamin.ex4.___ThirdActivity.ThirdActivityLogin;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;

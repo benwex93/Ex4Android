@@ -1,4 +1,4 @@
-package com.example.benjamin.ex4;
+package com.example.benjamin.ex4.__SecondActivity;
 
 /**
  * Created by benjamin on 16/06/16.
@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
+
+import com.example.benjamin.ex4.R;
 
 /**
  * A simple {@link android.support.v4.app.Fragment} subclass.
